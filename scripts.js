@@ -77,4 +77,15 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 });
 
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_vh06kgg', 'template_ndol6du', this)
+        .then(function() {
+            document.getElementById('formStatus').innerText = 'Message sent successfully!';
+        }, function(error) {
+            document.getElementById('formStatus').innerText = 'Failed to send message. Please try again later.';
+        });
+});
+
 
