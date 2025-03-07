@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="htpp://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Document</title>
+    <title>HOME</title>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){
@@ -19,11 +19,10 @@
         <nav>
             <h2>Portfolio</h2>
             <ul id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +30,7 @@
     <section class="hero">
         <div class="fade-in">
             <h1>Hello, It's Me</h1>
-            <h2>Code_With_Silo⌨️</h2> 
+            <h2>Silo⌨</h2> 
             <p class="typing-text">I am a Frontend Developer</p>
             <p>I am a computer science student</p>
             <div class="social-icons">
@@ -56,7 +55,7 @@
         </div>
         <div class="fff">
             <h1>About<span class="me">Me</span></h1>
-            <h3>Code_With_Silo⌨️</h3>
+            <h3>Silo⌨</h3>
             <p class="ok">As a front-end web developer, I focus on creating responsive, user-friendly interfaces with a keen attention to detail. <br> I bring creativity and technical expertise to every project, ensuring smooth and visually appealing user experiences. <br> Whether I’m working with HTML, CSS, or JavaScript, my goal is to make each design both functional and aesthetically pleasing. With a passion for modern web technologies, I continuously aim to improve and refine my skills to stay ahead of the curve.</p>
             <button class="btn">More About Me</button>
         </div>
@@ -75,7 +74,7 @@
                 </div>
                 <h1>UI/UX Design</h1>
                 <p class="ppp">I provide professional UI/UX design services focused on intuitive,aesthetic and functional user interfaces. I ensure designs that are visually appealing and effective in achieving your business goals for websites, mobile applications, and other digital platforms.</p>
-                <button class="btn">Contact me</button>
+                <button class="btn"><a href="https://wa.me/+2347087810133">Contact Me</a></button>
             </div>
                 <div class="service-card">
                     <div class="into">   
@@ -83,7 +82,7 @@
                     </div>
                     <h1>Graphic Design</h1>
                     <p class="ppp">I provide creative graphic design services that will bring your ideas to life into stunning visual masterpieces. I ensure each design is not only aesthetic, but also effective in conveying a message, I am ready to help you build a strong and memorable visual identity.</p>
-                    <button class="btn">Contact me</button>
+                    <button class="btn"><a href="https://wa.me/+2347087810133">Contact Me</a></button>
                 </div>
             
                 <div class="service-card">
@@ -92,11 +91,19 @@
                     </div>
                     <h1>Frontend Dev</h1>
                     <p class="ppp">I offer frontend development services that focus on creating attractive and responsive user interfaces. With expertise in HTML, CSS, and JavaScript, I'm committed to ensuring that every project not only looks great but also functions well across a variety of devices and browsers.</p>
-                    <button class="btn">Contact me</button>
+                    <button class="btn"><a href="https://wa.me/+2347087810133">Contact Me</a></button>
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+        a{
+            text-decoration: none;
+            color: #0d1b2a;
+            font-weight: bold;
+        }
+    </style>
 
     <!----skills section-->
 
@@ -167,7 +174,6 @@
                     I'm glad you've visited my personal portfolio website! If you have any questions, suggestions, or would like to collaborate, please feel free to contact me through this form. I will endeavor to reply to your message as soon as possible.
                 </p>
                 <div class="contact-details">
-                    <p>📧 Siloboy10@gmail.com</p>
                     <p>📞 +2347080264007</p>
                 </div>
                 <div class="social-icons">
@@ -179,10 +185,10 @@
             </div>
             <div class="contact-form">
                 <form id="contactForm">
-                    <input type="text" id="name" placeholder="Your Name" required>
-                    <input type="email" id="email" placeholder="Your Email" required>
-                    <input type="text" id="subject" placeholder="Subject" required>
-                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="from_email" placeholder="Your Email" required>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
                     <button type="submit">Send</button>
                 </form>
                 <p id="formStatus"></p>
@@ -191,7 +197,7 @@
     </section>    
 
     <footer>
-        <p class="gg">Developed by Code_With_Silo⌨️</p>
+        <p class="gg">Developed by Silo⌨</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
