@@ -355,6 +355,90 @@ progress{
     font-size: 25px;
     font-weight: bold;
 }
+
+/* Media query for screens smaller than 700px */
+@media (max-width: 700px) {
+    body {
+        font-size: 14px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-pic img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .social-icons {
+        size: 100%;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-me, .contact-container, .skills-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .service-card, .contact-info, .contact-form {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+    .skills-section {
+        padding: 20px;
+    }
+
+    .circle-container {
+        width: 100%;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav ul li:hover {
+        background-color: transparent;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        padding: 8px;
+    }
+
+    .contact-form button {
+        padding: 10px;
+    }
+}
+
 @media (max-width: 700px){
     body {
         font-size: 14px;
