@@ -357,7 +357,7 @@ progress{
 }
 
 /* Media query for screens smaller than 700px */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     body {
         font-size: 14px;
         text-align: center;
@@ -415,7 +415,7 @@ progress{
 }
 
 /* Media query for screens smaller than 500px */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         gap: 10px;
@@ -439,7 +439,7 @@ progress{
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 768px){
     body {
         font-size: 14px;
         text-align: center;
